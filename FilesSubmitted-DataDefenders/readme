@@ -1,0 +1,10 @@
+# Urban Development and City Management Simulation
+
+## Description
+This project simulates urban development and city management, focusing on infrastructure, economic growth, and social dynamics. It implements various design patterns to manage city metrics, create buildings, calculate taxes, and more.
+
+## Compilation and Execution
+To compile and run the program, use the following command:
+
+```bash
+make run

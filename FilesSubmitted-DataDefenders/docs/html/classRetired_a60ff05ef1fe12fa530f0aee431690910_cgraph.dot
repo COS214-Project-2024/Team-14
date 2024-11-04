@@ -1,0 +1,12 @@
+digraph "Retired::setSalary"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Retired::setSalary",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Attempts to set salary (not supported for retired citizens)"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CitizenPrototype::getID",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCitizenPrototype.html#ab8fa7fb81a7e04c87bfed35b1724ba18",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CitizenPrototype::getSalary",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCitizenPrototype.html#a24b50fd610cfd755341bbd3f43eb2c5c",tooltip=" "];
+}

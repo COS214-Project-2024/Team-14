@@ -1,0 +1,18 @@
+digraph "Building::upgradeEnergyEfficiency"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Building::upgradeEnergyEfficiency",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="EnergyEfficiencyUpgrade\l::applyUpgrade",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classEnergyEfficiencyUpgrade.html#a3d2bb11b44e513b68c3f7b03c69b3c8d",tooltip="Applies an energy efficiency upgrade to the building."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Building::getCost",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBuilding.html#a55e45c369571a1cc9e4e883f726bdf1a",tooltip="Get building cost."];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="EnergyEfficiencyUpgrade\l::getUpgradeCost",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classEnergyEfficiencyUpgrade.html#a88db7a0c850e6d1eb0197a5b9267e0d3",tooltip="Calculates the cost of the next upgrade."];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Building::setCost",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBuilding.html#a3374cfa883f06044978a34a1e33339d9",tooltip=" "];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Building::setEnergyLevel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBuilding.html#a3f9f9b6b17fb747bce7e8d74e3d5b2ba",tooltip=" "];
+}

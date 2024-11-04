@@ -1,0 +1,18 @@
+digraph "Building::upgradeSecurity"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Building::upgradeSecurity",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="SecurityUpgrade::applyUpgrade",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSecurityUpgrade.html#a4d9a8dd164be4fbbc079c4b04b58d71c",tooltip="Applies the security upgrade to the building."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Building::getCost",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBuilding.html#a55e45c369571a1cc9e4e883f726bdf1a",tooltip="Get building cost."];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="SecurityUpgrade::getUpgradeCost",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSecurityUpgrade.html#a3f34e350661673da09c8a04ee7900fd0",tooltip="Calculates the cost of the next security upgrade."];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Building::setCost",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBuilding.html#a3374cfa883f06044978a34a1e33339d9",tooltip=" "];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Building::setSecurityLevel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBuilding.html#a4745ee5c2b4aa350de643a2adafc0232",tooltip=" "];
+}

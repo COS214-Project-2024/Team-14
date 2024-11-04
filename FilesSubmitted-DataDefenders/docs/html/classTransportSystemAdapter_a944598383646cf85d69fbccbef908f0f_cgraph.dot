@@ -1,0 +1,20 @@
+digraph "TransportSystemAdapter::TransportSystemAdapter"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="TransportSystemAdapter\l::TransportSystemAdapter",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Construct a new Transport System Adapter."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="TransportSystemAdapter\l::updateModernAttributes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTransportSystemAdapter.html#a7f6cde43380d74f7991e5b23d856aa29",tooltip="Updates the modern attributes from the legacy system."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="LegacyTransportSystem\l::getOldCapacity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLegacyTransportSystem.html#a93599436ec7af2e1e31672508e694c5d",tooltip="Gets the transport capacity."];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="LegacyTransportSystem\l::getOldFuelUsage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLegacyTransportSystem.html#a2dc5fa0b0fc848735c6bc6436921f834",tooltip="Gets the fuel usage rate."];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="LegacyTransportSystem\l::getRepairCosts",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLegacyTransportSystem.html#a45af10fe1f7216f376c7ad1f6acf3deb",tooltip="Gets the repair costs."];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="LegacyTransportSystem\l::getServiceStatus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLegacyTransportSystem.html#aef17476f3b2c873e38fe44cfa0f2744a",tooltip="Gets the service status."];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="LegacyTransportSystem\l::getVehicleClass",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLegacyTransportSystem.html#a826e41a6e56c564fbf99750640275144",tooltip="Gets the vehicle classification."];
+}

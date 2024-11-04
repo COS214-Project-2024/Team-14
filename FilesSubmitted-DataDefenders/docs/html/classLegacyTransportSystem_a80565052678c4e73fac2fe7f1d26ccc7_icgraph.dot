@@ -1,0 +1,15 @@
+digraph "LegacyTransportSystem::operateOldTransport"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="LegacyTransportSystem\l::operateOldTransport",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Operates the legacy transport."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="TransportSystemAdapter\l::operationModernTransport",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTransportSystemAdapter.html#a7fa6f1a8cf4fdd2183158b83cb777548",tooltip="Adapts the legacy transport operation to modern format."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="testTransportSystemAdaptation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#a1aff7a21fb7cc013dc819fb6c9e16824",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",tooltip="Main program entry point."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

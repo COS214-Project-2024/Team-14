@@ -1,0 +1,14 @@
+digraph "CitizenPrototype::getBuilding"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="CitizenPrototype::getBuilding",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Retired::performTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRetired.html#a7a0e33da63730d4315300604bb154ebb",tooltip="Performs the daily task of the retired citizen Outputs the current activity and location."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Student::performTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classStudent.html#a8089fddf4a9cec4969d8916c5c3178f1",tooltip="Perform the student's task."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Worker::performTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classWorker.html#a5f8ac316c7502f1964ed1344fd0f2dac",tooltip="Perform the worker's task."];
+}

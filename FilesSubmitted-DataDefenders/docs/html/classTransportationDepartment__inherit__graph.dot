@@ -1,0 +1,9 @@
+digraph "TransportationDepartment"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{TransportationDepartment\n|- building\l- Capital\l|+ TransportationDepartment()\l+ getBuilding()\l+ getCapital()\l+ setCapital()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Represents the Transportation Department in the government structure @inherits GovDepartment."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{GovDepartment\n||+ addDepartment()\l+ removeDepartment()\l+ getBuilding()\l+ getCapital()\l+ setCapital()\l+ ~GovDepartment()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classGovDepartment.html",tooltip="Abstract base class representing a government department."];
+}

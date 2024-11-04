@@ -1,0 +1,12 @@
+digraph "PublicTransit::displayInfo"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PublicTransit::displayInfo",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Displays detailed information about the public transit project."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PublicTransit::getType",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPublicTransit.html#a7f09443d67c3425581cfb4614af4fa1a",tooltip="Gets the type of infrastructure."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PublicTransit::isValid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPublicTransit.html#a4228ec93beae7b25712276b48f2d6f5c",tooltip="Validates the public transit project."];
+}

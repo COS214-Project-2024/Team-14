@@ -1,0 +1,36 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="BaseBuilding",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBaseBuilding.html",tooltip="Abstract base class defining core building interface."];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="Building",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBuilding.html",tooltip="Abstract base class representing a building in the city."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="BuildingUpgrade",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBuildingUpgrade.html",tooltip="Decorator class that adds upgrade functionality to Building objects."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CapacityUpgrade",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCapacityUpgrade.html",tooltip="A class that handles capacity upgrades for buildings @inherits BuildingUpgrade."];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="EnergyEfficiencyUpgrade",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classEnergyEfficiencyUpgrade.html",tooltip="Handles energy efficiency upgrades for buildings."];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="SecurityUpgrade",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSecurityUpgrade.html",tooltip="A decorator class that adds security upgrades to buildings @inherits BuildingUpgrade."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Commercial",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCommercial.html",tooltip="Represents commercial buildings in the city."];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Industrial",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classIndustrial.html",tooltip="Class representing an industrial building."];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Landmarks",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLandmarks.html",tooltip="Represents landmark buildings in the city."];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Residential",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classResidential.html",tooltip="Represents a residential building in the city system."];
+  Node21 [label="CityComponent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCityComponent.html",tooltip="Abstract base class for city components in a composite pattern."];
+  Node21 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="City",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCity.html",tooltip="Singleton class representing the entire city structure."];
+  Node21 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="District",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDistrict.html",tooltip="Represents a city district containing neighborhoods."];
+  Node21 -> Node24 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node24 [label="Neighborhood",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classNeighborhood.html",tooltip="Represents a neighborhood in the city."];
+  Node50 [label="ResourceConsumer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classResourceConsumer.html",tooltip="Abstract interface for entities that consume resources."];
+  Node50 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

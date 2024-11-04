@@ -1,0 +1,18 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="GovDepartment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classGovDepartment.html",tooltip="Abstract base class representing a government department."];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="CompositeGovDepartment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCompositeGovDepartment.html",tooltip="A composite class that manages multiple government departments."];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="EducationDepartment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classEducationDepartment.html",tooltip="Represents the Education Department in the government structure."];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="HealthDepartment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHealthDepartment.html",tooltip="Concrete implementation of a government health department."];
+  Node0 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="SecurityDepartment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSecurityDepartment.html",tooltip="Represents a security department that inherits from GovDepartment."];
+  Node0 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="TransportationDepartment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTransportationDepartment.html",tooltip="Represents the Transportation Department in the government structure @inherits GovDepartment."];
+}

@@ -1,0 +1,49 @@
+digraph "testTransportSystemAdaptation"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="testTransportSystemAdaptation",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="TransportFactory::cleanup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTransportFactory.html#a94d019e450353131c7049484f5476d87",tooltip="Clean up all legacy transport systems."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="TransportFactory::create\lTransport",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTransportFactory.html#a133e2d0c1ce5497d6d381041c120eecf",tooltip="Create a new transport system."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="TransportSystemAdapter\l::getFuelEfficiency",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTransportSystemAdapter.html#ad23e422426248c15ba5f2ec231d0f384",tooltip="Gets the fuel efficiency from legacy system."];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="LegacyTransportSystem\l::getOldFuelUsage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLegacyTransportSystem.html#a2dc5fa0b0fc848735c6bc6436921f834",tooltip="Gets the fuel usage rate."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="TransportSystemAdapter\l::getMaintenanceCost",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTransportSystemAdapter.html#ad97406e93ac52ddc8841a91a7c007ea3",tooltip="Gets the maintenance cost from legacy system."];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="LegacyTransportSystem\l::getRepairCosts",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLegacyTransportSystem.html#a45af10fe1f7216f376c7ad1f6acf3deb",tooltip="Gets the repair costs."];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="LegacyTransportSystem\l::getOldCapacity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLegacyTransportSystem.html#a93599436ec7af2e1e31672508e694c5d",tooltip="Gets the transport capacity."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="TransportSystemAdapter\l::getPassengerCapacity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTransportSystemAdapter.html#a0734f9fc16efe222fe08600694918493",tooltip="Gets the passenger capacity from legacy system."];
+  Node9 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="LegacyTransportSystem\l::getServiceStatus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLegacyTransportSystem.html#aef17476f3b2c873e38fe44cfa0f2744a",tooltip="Gets the service status."];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="CityPlanner::getTransport\lSystems",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCityPlanner.html#aae52586e3e9e87b24d9858030fbb6bbe",tooltip=" "];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="ModernTransport::getTransportType",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classModernTransport.html#a8aa28dee79fb364696968e68aaee8725",tooltip="Gets the transport type identifier."];
+  Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="TransportSystemAdapter\l::getTransportType",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTransportSystemAdapter.html#a0521cad346044dc5f2aec056e01f1e57",tooltip="Gets the transport type from legacy system."];
+  Node13 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="LegacyTransportSystem\l::getVehicleClass",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLegacyTransportSystem.html#a826e41a6e56c564fbf99750640275144",tooltip="Gets the vehicle classification."];
+  Node1 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="CityPlanner::integrateTransport\lSystem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCityPlanner.html#a65b748b1c243b625ae5fa12ead9655f8",tooltip=" "];
+  Node15 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="TransportSystemAdapter\l::isOperational",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTransportSystemAdapter.html#a63a65adcf124e532f91fd57f074498c5",tooltip="Checks if the legacy system is operational."];
+  Node16 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="LegacyTransportSystem\l::operateOldTransport",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLegacyTransportSystem.html#a80565052678c4e73fac2fe7f1d26ccc7",tooltip="Operates the legacy transport."];
+  Node1 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="TransportSystemAdapter\l::operationModernTransport",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTransportSystemAdapter.html#a7fa6f1a8cf4fdd2183158b83cb777548",tooltip="Adapts the legacy transport operation to modern format."];
+  Node18 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

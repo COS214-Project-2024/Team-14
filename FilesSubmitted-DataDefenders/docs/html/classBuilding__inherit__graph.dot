@@ -1,0 +1,29 @@
+digraph "Building"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Building\n|+ buildings\l# buildingType\l# name\l# floorArea\l# maxCapacity\l# currentOccupancy\l# maintenanceNeeded\l# energyUsage\l# Cost\l# securityLevel\l# capacityLevel\l# energyLevel\l# parentNeighborhood\l# resourceLevels\l- buildingTax\l- state\l- resourceRequirements\l|+ calculateTax()\l+ calculateTotalTax()\l+ Building()\l+ ~Building()\l+ setCost()\l+ print()\l+ incrementOccupancy()\l+ upgradeSecurity()\l+ upgradeEnergyEfficiency()\l+ upgradeCapacity()\land 22 more...\l+ cleanup()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Abstract base class representing a building in the city."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{CityComponent\n|# population\l# area\l|+ ~CityComponent()\l+ add()\l+ remove()\l+ getName()\l+ getPopulation()\l+ getArea()\l+ print()\l+ getComponents()\l+ findComponent()\l+ getBuildingType()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCityComponent.html",tooltip="Abstract base class for city components in a composite pattern."];
+  Node3 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node3 [label="{BaseBuilding\n||+ getDescription()\l+ getCost()\l+ ~BaseBuilding()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBaseBuilding.html",tooltip="Abstract base class defining core building interface."];
+  Node4 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node4 [label="{ResourceConsumer\n||+ ~ResourceConsumer()\l+ receiveResource()\l+ getResourceLevel()\l+ needsResource()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classResourceConsumer.html",tooltip="Abstract interface for entities that consume resources."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node5 [label="{BuildingUpgrade\n|# building\l# upgradeLevel\l|+ BuildingUpgrade()\l+ ~BuildingUpgrade()\l+ getDescription()\l+ getCost()\l+ getBuildingType()\l+ getFloorArea()\l+ getMaxCapacity()\l+ setMaxCapacity()\l+ getUpgradeCost()\l+ add()\l+ remove()\l+ getUpgradeLevel()\l+ incrementUpgradeLevel()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBuildingUpgrade.html",tooltip="Decorator class that adds upgrade functionality to Building objects."];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node6 [label="{CapacityUpgrade\n||+ CapacityUpgrade()\l+ getDescription()\l+ getUpgradeCost()\l+ applyUpgrade()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCapacityUpgrade.html",tooltip="A class that handles capacity upgrades for buildings @inherits BuildingUpgrade."];
+  Node5 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node7 [label="{EnergyEfficiencyUpgrade\n||+ EnergyEfficiencyUpgrade()\l+ applyUpgrade()\l+ getUpgradeCost()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classEnergyEfficiencyUpgrade.html",tooltip="Handles energy efficiency upgrades for buildings."];
+  Node5 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node8 [label="{SecurityUpgrade\n||+ SecurityUpgrade()\l+ getDescription()\l+ getUpgradeCost()\l+ applyUpgrade()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSecurityUpgrade.html",tooltip="A decorator class that adds security upgrades to buildings @inherits BuildingUpgrade."];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node9 [label="{Commercial\n||+ Commercial()\l+ getDescription()\l+ getCost()\l+ getBuildingType()\l+ getFloorArea()\l+ getMaxCapacity()\l+ setMaxCapacity()\l+ add()\l+ remove()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCommercial.html",tooltip="Represents commercial buildings in the city."];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node10 [label="{Industrial\n||+ Industrial()\l+ getDescription()\l+ getCost()\l+ getBuildingType()\l+ getFloorArea()\l+ getMaxCapacity()\l+ setMaxCapacity()\l+ add()\l+ remove()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classIndustrial.html",tooltip="Class representing an industrial building."];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node11 [label="{Landmarks\n||+ Landmarks()\l+ getDescription()\l+ getCost()\l+ getBuildingType()\l+ getFloorArea()\l+ getMaxCapacity()\l+ setMaxCapacity()\l+ add()\l+ remove()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLandmarks.html",tooltip="Represents landmark buildings in the city."];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node12 [label="{Residential\n||+ Residential()\l+ getDescription()\l+ getCost()\l+ getBuildingType()\l+ getFloorArea()\l+ getMaxCapacity()\l+ setMaxCapacity()\l+ add()\l+ remove()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classResidential.html",tooltip="Represents a residential building in the city system."];
+}

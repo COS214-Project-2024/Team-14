@@ -1,0 +1,10 @@
+digraph "TransportSystemAdapter::getFuelEfficiency"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="TransportSystemAdapter\l::getFuelEfficiency",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Gets the fuel efficiency from legacy system."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="LegacyTransportSystem\l::getOldFuelUsage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLegacyTransportSystem.html#a2dc5fa0b0fc848735c6bc6436921f834",tooltip="Gets the fuel usage rate."];
+}

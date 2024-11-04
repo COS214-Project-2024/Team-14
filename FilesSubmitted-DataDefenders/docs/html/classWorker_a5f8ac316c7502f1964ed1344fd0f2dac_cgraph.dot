@@ -1,0 +1,32 @@
+digraph "Worker::performTask"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Worker::performTask",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Perform the worker's task."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CitizenPrototype::getBuilding",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCitizenPrototype.html#a036484157a5704f6bcb57677f42bb4d3",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CitizenPrototype::getID",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCitizenPrototype.html#ab8fa7fb81a7e04c87bfed35b1724ba18",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Building::print",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBuilding.html#a780463ee186e6bc3c3e1bca152211d09",tooltip="Prints the component details."];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="CityComponent::getBuildingType",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCityComponent.html#ab6c4da47b2b57cb7b2c45415f71ae5c2",tooltip="Gets the building type."];
+  Node4 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Building::getCapacityLevel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBuilding.html#a0360b7ebe062e3ba1ec4113962c8abab",tooltip=" "];
+  Node4 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Building::getCost",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBuilding.html#a55e45c369571a1cc9e4e883f726bdf1a",tooltip="Get building cost."];
+  Node4 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Building::getEnergyLevel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBuilding.html#a9fcaa2e14e6cbfff804a49bae39df5d9",tooltip=" "];
+  Node4 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Building::getFloorArea",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBuilding.html#a333cb1eea387ee3c085918eb9c0d29c9",tooltip=" "];
+  Node4 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Building::getMaxCapacity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBuilding.html#a0e7b44f061de0088030aa80079a64620",tooltip=" "];
+  Node4 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Building::getSecurityLevel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBuilding.html#a9ff9f661da5b8d81c77131b1a295f01b",tooltip=" "];
+  Node4 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Building::getState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBuilding.html#a36727ca54f1fd273874dc941fc0149e1",tooltip=" "];
+  Node12 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="BuildingState::getState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBuildingState.html#ae47516b37a1fbc976b9340762d0dcdd2",tooltip="Get current state name."];
+}

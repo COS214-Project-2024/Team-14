@@ -1,0 +1,33 @@
+# Project settings
+PROJECT_NAME           = "City Simulation"
+PROJECT_BRIEF         = "Urban Management Simulation System"
+OUTPUT_DIRECTORY      = docs
+INPUT                 = .
+FILE_PATTERNS         = *.h *.cpp
+RECURSIVE             = YES
+
+# Output settings
+GENERATE_HTML         = YES
+GENERATE_LATEX        = NO
+HTML_OUTPUT           = html
+HTML_FILE_EXTENSION  = .html
+
+# Extraction settings
+EXTRACT_ALL           = YES
+EXTRACT_PRIVATE       = YES
+EXTRACT_STATIC        = YES
+
+# Diagram settings
+HAVE_DOT             = YES
+UML_LOOK             = YES
+CALL_GRAPH           = YES
+CALLER_GRAPH         = YES
+CLASS_GRAPH          = YES
+COLLABORATION_GRAPH  = YES
+INHERITANCE_GRAPH    = YES
+
+# Source browsing
+SOURCE_BROWSER       = YES
+INLINE_SOURCES       = YES
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION  = YES

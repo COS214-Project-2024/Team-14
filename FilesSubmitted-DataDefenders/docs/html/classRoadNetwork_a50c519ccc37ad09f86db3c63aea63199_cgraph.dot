@@ -1,0 +1,12 @@
+digraph "RoadNetwork::displayInfo"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="RoadNetwork::displayInfo",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Displays detailed information about the road network."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="RoadNetwork::getType",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRoadNetwork.html#aae5705384601bf7dbee4728b4c11011a",tooltip="Gets the type of infrastructure."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="RoadNetwork::isValid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRoadNetwork.html#a122bbbfcb71d6e93d29bd2e4c15b82b0",tooltip="Validates the road network."];
+}

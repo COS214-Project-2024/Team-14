@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['id_170',['id',['../classCitizenPrototype.html#a677258df15cef07444ea3aea8c95da83',1,'CitizenPrototype']]],
+  ['incometax_171',['IncomeTax',['../classIncomeTax.html#adec6236f967611a3f355251a1a7b64d6',1,'IncomeTax']]],
+  ['incometax_172',['incomeTax',['../classCitizenPrototype.html#a8c1daebbcc3c9c46b7d54ef0ec28c141',1,'CitizenPrototype']]],
+  ['incometax_173',['IncomeTax',['../classIncomeTax.html',1,'']]],
+  ['incometax_2ecpp_174',['IncomeTax.cpp',['../IncomeTax_8cpp.html',1,'']]],
+  ['incometax_2eh_175',['IncomeTax.h',['../IncomeTax_8h.html',1,'']]],
+  ['incrementoccupancy_176',['incrementOccupancy',['../classBuilding.html#a6c959df741ddf85e4f1596b7b32ee091',1,'Building']]],
+  ['incrementupgradelevel_177',['incrementUpgradeLevel',['../classBuildingUpgrade.html#a8376a1be41c58fdf034f754bafee0591',1,'BuildingUpgrade']]],
+  ['industrial_178',['Industrial',['../classIndustrial.html',1,'Industrial'],['../classIndustrial.html#a00d6631d61d23fe5f59a58169440bcd3',1,'Industrial::Industrial()']]],
+  ['industrial_2eh_179',['Industrial.h',['../Industrial_8h.html',1,'']]],
+  ['infrastructure_180',['Infrastructure',['../classInfrastructure.html',1,'']]],
+  ['infrastructure_2eh_181',['Infrastructure.h',['../Infrastructure_8h.html',1,'']]],
+  ['infrastructurebuilder_182',['InfrastructureBuilder',['../classInfrastructureBuilder.html',1,'']]],
+  ['infrastructurebuilder_2eh_183',['InfrastructureBuilder.h',['../InfrastructureBuilder_8h.html',1,'']]],
+  ['instance_184',['instance',['../classCityResourceDistribution.html#a513ce88b9c7857ed501bda74ae9dfe09',1,'CityResourceDistribution::instance()'],['../classCity.html#a03b0247fb8620b898824fadde712f9d8',1,'City::instance()']]],
+  ['integratetransportsystem_185',['integrateTransportSystem',['../classCityPlanner.html#a65b748b1c243b625ae5fa12ead9655f8',1,'CityPlanner']]],
+  ['isbeingdestroyed_186',['isBeingDestroyed',['../classCityResourceDistribution.html#abb94efa87e31ef8e6a27ce7e8339b58d',1,'CityResourceDistribution']]],
+  ['iscompleted_187',['isCompleted',['../classPublicTransit.html#a623742bc2bc4b8db004dcc863af4ac23',1,'PublicTransit::isCompleted()'],['../classRoadNetwork.html#a304d368dcb802e5a0915a2815464c93d',1,'RoadNetwork::isCompleted()'],['../classUtilityNetwork.html#aeab59b04baa13d97c74c5e15a394b870',1,'UtilityNetwork::isCompleted()']]],
+  ['isoperational_188',['isOperational',['../classModernTransport.html#ae4ab8370a38288077fe1cb5d1d7ec7b4',1,'ModernTransport::isOperational()'],['../classTransportSystemAdapter.html#a63a65adcf124e532f91fd57f074498c5',1,'TransportSystemAdapter::isOperational()']]],
+  ['isvalid_189',['isValid',['../classInfrastructure.html#a09800a63ee05c10f376d87aa33b2bcf7',1,'Infrastructure::isValid()'],['../classPublicTransit.html#a4228ec93beae7b25712276b48f2d6f5c',1,'PublicTransit::isValid()'],['../classRoadNetwork.html#a122bbbfcb71d6e93d29bd2e4c15b82b0',1,'RoadNetwork::isValid()'],['../classUtilityNetwork.html#abe79f432b170aaae7c3c64bcf2bb95b3',1,'UtilityNetwork::isValid()']]],
+  ['isvalidbuild_190',['isValidBuild',['../classInfrastructureBuilder.html#a5c0874ead274134b25918f6a847fe286',1,'InfrastructureBuilder::isValidBuild()'],['../classPublicTransitBuilder.html#a1944c25d36a479d5a8580b0ffc526e19',1,'PublicTransitBuilder::isValidBuild()'],['../classRoadNetworkBuilder.html#ac70a14eebc0db0ccf2bcde8a7ea73070',1,'RoadNetworkBuilder::isValidBuild()'],['../classUtilityNetworkBuilder.html#a4eb990089be327caf9c88ad18bcbabba',1,'UtilityNetworkBuilder::isValidBuild()']]]
+];

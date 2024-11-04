@@ -1,0 +1,10 @@
+digraph "Building::add"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Building::add",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Adds a child component."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="BuildingUpgrade::add",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBuildingUpgrade.html#aee34d67938b542b07d085958b1f4eb30",tooltip="Adds a child component."];
+}

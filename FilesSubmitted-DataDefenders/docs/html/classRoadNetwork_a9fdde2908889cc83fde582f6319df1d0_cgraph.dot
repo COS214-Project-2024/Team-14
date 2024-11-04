@@ -1,0 +1,10 @@
+digraph "RoadNetwork::clone"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="RoadNetwork::clone",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Creates a deep copy of the road network."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="RoadNetwork::RoadNetwork",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRoadNetwork.html#a635cd53a27194c18870f6afc1f9e54cf",tooltip="Default constructor Initializes a new road network with empty description, zero cost,..."];
+}

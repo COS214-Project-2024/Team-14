@@ -1,0 +1,16 @@
+digraph "Building::setCapacityLevel"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Building::setCapacityLevel",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CapacityUpgrade::applyUpgrade",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCapacityUpgrade.html#aea35136286bdd34c4df4c17de7349a85",tooltip="Applies the capacity upgrade to the building."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="testBuildingUpgrades",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#af1c85c60ddb2951dfd9ccc7c4a6ad30b",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",tooltip="Main program entry point."];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Building::upgradeCapacity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBuilding.html#a5079d009c21ed52091fe792c3691425d",tooltip=" "];
+}

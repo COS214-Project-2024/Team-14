@@ -1,0 +1,10 @@
+digraph "TransportSystemAdapter::isOperational"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="TransportSystemAdapter\l::isOperational",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Checks if the legacy system is operational."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="LegacyTransportSystem\l::getServiceStatus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLegacyTransportSystem.html#aef17476f3b2c873e38fe44cfa0f2744a",tooltip="Gets the service status."];
+}

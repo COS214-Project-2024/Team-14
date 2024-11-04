@@ -1,0 +1,35 @@
+digraph "CityResourceDistribution::CityResourceDistribution"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="CityResourceDistribution\l::CityResourceDistribution",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CityResourceDistribution\l::getInstance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCityResourceDistribution.html#a4b66e3241e4a55a374f5efaa0e042352",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="ConcreteBuildingFactory\l::createBuilding",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classConcreteBuildingFactory.html#a7bfea29ce0e7c7272b82096d147e9c98",tooltip="Creates a new building of the specified type."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="demostratePrototypePattern",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#a84baf487fe0bebf8de425799d3e53be4",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",tooltip="Main program entry point."];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="testBuildingStateSystem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#a908e8a0a3c16a6f88aa7735df0c39b13",tooltip=" "];
+  Node3 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="testBuildingTaxSystem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#ac4762b9da950d5274021fae8923400ee",tooltip=" "];
+  Node7 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="testBuildingUpgrades",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#af1c85c60ddb2951dfd9ccc7c4a6ad30b",tooltip=" "];
+  Node8 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="testCompositePatternNew",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#a3bfd544cef1b06f544318ca40d808a2e",tooltip=" "];
+  Node9 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="testIntegratedSystem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#a859f1c4b77421f0cb0f62ba1bfd06029",tooltip=" "];
+  Node10 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="testMediatorPattern",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#ad9a6a50886ac6638fbfd00a12d919298",tooltip=" "];
+  Node11 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

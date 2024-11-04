@@ -1,0 +1,16 @@
+digraph "Building::getName"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Building::getName",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Gets the component name."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Commercial::getDescription",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCommercial.html#a768d632ca453a75af7eb1a4f787995f0",tooltip="Get building description."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Industrial::getDescription",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classIndustrial.html#acdaaa11fb37af3d27e7943bd7069b376",tooltip="Gets the building description."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Landmarks::getDescription",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLandmarks.html#a5dedd6638bd32887aa6f9a75411b25fc",tooltip="Gets the description of the landmark."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Residential::getDescription",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classResidential.html#abed2cc0d4ed24e9d13656b66e4471da8",tooltip="Gets the description of the residential building."];
+}

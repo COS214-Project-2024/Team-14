@@ -1,0 +1,20 @@
+digraph "CityPlanner::constructInfrastructure"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CityPlanner::constructInfrastructure",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Constructs new infrastructure."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="InfrastructureBuilder\l::BuildFinishing",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classInfrastructureBuilder.html#ad2651644c64d743aa503b6fa63ea4f61",tooltip="Applies finishing touches to the infrastructure."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="InfrastructureBuilder\l::BuildFoundation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classInfrastructureBuilder.html#af976d9ec89046ed17faf74d555afdd4c",tooltip="Builds the foundation of the infrastructure."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="InfrastructureBuilder\l::BuildStructure",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classInfrastructureBuilder.html#a62f490e08c8bc1ae9beb5f3f656749bb",tooltip="Builds the main structure."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="InfrastructureBuilder\l::GetResult",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classInfrastructureBuilder.html#a3dc890c181e3bb12e44542acc90f5b2d",tooltip="Returns the constructed Infrastructure object."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="InfrastructureBuilder\l::isValidBuild",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classInfrastructureBuilder.html#a5c0874ead274134b25918f6a847fe286",tooltip="Checks if the current build configuration is valid."];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="InfrastructureBuilder\l::reset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classInfrastructureBuilder.html#ac0ed4ccd95cd298844054f1fa159e312",tooltip="Resets the builder to its initial state."];
+}

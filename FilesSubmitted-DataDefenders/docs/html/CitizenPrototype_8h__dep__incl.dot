@@ -1,0 +1,30 @@
+digraph "CitizenPrototype.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="CitizenPrototype.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Prototype pattern implementation for citizen management."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CitizenPrototype.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$CitizenPrototype_8cpp.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CitizenSatisfaction.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$CitizenSatisfaction_8h.html",tooltip="Defines the CitizenSatisfaction class for monitoring citizen happiness."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="main.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html",tooltip="Main entry point for the City Simulation system."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="ConcreteCityStats.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ConcreteCityStats_8h.html",tooltip="Implements concrete statistics tracking for city metrics."];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="IncomeTax.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$IncomeTax_8cpp.html",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="PopulationGrowth.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$PopulationGrowth_8h.html",tooltip="Defines the PopulationGrowth observer class for monitoring city population changes."];
+  Node7 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Retired.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Retired_8h.html",tooltip="Defines the Retired class for managing retired citizens."];
+  Node8 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Student.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Student_8h.html",tooltip="Student citizen implementation."];
+  Node9 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Worker.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Worker_8h.html",tooltip="Worker citizen implementation."];
+  Node10 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

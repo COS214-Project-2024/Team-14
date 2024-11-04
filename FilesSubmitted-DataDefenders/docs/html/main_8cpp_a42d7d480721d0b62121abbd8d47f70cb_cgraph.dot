@@ -1,0 +1,18 @@
+digraph "testIncomeTaxSystem"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="testIncomeTaxSystem",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="TaxSystem::calculateTax",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTaxSystem.html#aab489be8cc27ff7b457af847c429a5f8",tooltip="Calculates tax using the current strategy."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="TaxStrategy::calculateTax",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTaxStrategy.html#a0a31d327a6e1ae73011d0be81cec6e48",tooltip="Pure virtual function for calculating tax."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="CitizenPrototype::calculate\lTotalTax",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCitizenPrototype.html#a310a7687a2b36199b53bd3beed62a9db",tooltip=" "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="IncomeTax::calculateTotalTax",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classIncomeTax.html#a61c5901f01a807cb1c2d02edaa2eee4b",tooltip="Calculates the total tax."];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="IncomeTax::calculateTax",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classIncomeTax.html#a9c2bbca8ef05dae50831ef4a7c69de61",tooltip="Calculates tax for a given amount."];
+}

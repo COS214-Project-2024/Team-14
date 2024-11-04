@@ -1,0 +1,12 @@
+digraph "CitizenPrototype::getSalary"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="CitizenPrototype::getSalary",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Retired::getPension",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRetired.html#a2b232dc31163e399e832c0c72b15353a",tooltip="Gets the pension amount."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Retired::setSalary",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRetired.html#a60ff05ef1fe12fa530f0aee431690910",tooltip="Attempts to set salary (not supported for retired citizens)"];
+}

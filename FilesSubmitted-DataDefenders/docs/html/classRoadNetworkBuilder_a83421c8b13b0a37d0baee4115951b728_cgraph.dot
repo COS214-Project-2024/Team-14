@@ -1,0 +1,18 @@
+digraph "RoadNetworkBuilder::BuildFinishing"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="RoadNetworkBuilder\l::BuildFinishing",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Completes the finishing phase of the road network."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Infrastructure::getCost",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classInfrastructure.html#a1b4f8e2f591022a82dda0415ed87a650",tooltip="Gets the infrastructure cost."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Infrastructure::getDescription",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classInfrastructure.html#a987e93f2a9000221761a65c68862bac7",tooltip="Gets the infrastructure description."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Infrastructure::setCost",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classInfrastructure.html#a24785218a889db37dd5a7d3226acf0c7",tooltip="Sets the infrastructure cost."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Infrastructure::setDescription",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classInfrastructure.html#ae76df1f6c77e9ce618de18089ad29bcb",tooltip="Sets the infrastructure description."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="RoadNetworkBuilder\l::validateState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRoadNetworkBuilder.html#a9f8a5aecaca9ec07a1e415643bee844d",tooltip="Validates the current state of the builder."];
+}

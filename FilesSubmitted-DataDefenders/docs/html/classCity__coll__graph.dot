@@ -1,0 +1,10 @@
+digraph "City"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{City\n|- name\l- districts\l- components\l|+ City()\l+ operator=()\l+ ~City()\l+ add()\l+ remove()\l+ getName()\l+ getComponents()\l+ findComponent()\l+ findOrCreateDistrict()\l+ print()\l+ getInstance()\l+ cleanup()\l- City()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Singleton class representing the entire city structure."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{CityComponent\n|# population\l# area\l|+ ~CityComponent()\l+ add()\l+ remove()\l+ getName()\l+ getPopulation()\l+ getArea()\l+ print()\l+ getComponents()\l+ findComponent()\l+ getBuildingType()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCityComponent.html",tooltip="Abstract base class for city components in a composite pattern."];
+  Node1 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -instance" ,arrowhead="odiamond",fontname="Helvetica"];
+}

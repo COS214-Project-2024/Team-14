@@ -1,0 +1,17 @@
+digraph "GovDepartment"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{GovDepartment\n||+ addDepartment()\l+ removeDepartment()\l+ getBuilding()\l+ getCapital()\l+ setCapital()\l+ ~GovDepartment()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Abstract base class representing a government department."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{CompositeGovDepartment\n|- departments\l- taxPolicy\l- totalCapital\l|+ setCapital()\l+ getCapital()\l+ distributeCapital()\l+ CalculateCapital()\l+ ~CompositeGovDepartment()\l+ addDepartment()\l+ removeDepartment()\l+ getBuilding()\l+ getDepartmentCount()\l+ getDepartments()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCompositeGovDepartment.html",tooltip="A composite class that manages multiple government departments."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node3 [label="{EducationDepartment\n|- building\l- Capital\l|+ EducationDepartment()\l+ getBuilding()\l+ getCapital()\l+ setCapital()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classEducationDepartment.html",tooltip="Represents the Education Department in the government structure."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node4 [label="{HealthDepartment\n|- building\l- capital\l|+ HealthDepartment()\l+ getBuilding()\l+ getCapital()\l+ setCapital()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHealthDepartment.html",tooltip="Concrete implementation of a government health department."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node5 [label="{SecurityDepartment\n|- building\l- Capital\l|+ SecurityDepartment()\l+ getBuilding()\l+ getCapital()\l+ setCapital()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSecurityDepartment.html",tooltip="Represents a security department that inherits from GovDepartment."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node6 [label="{TransportationDepartment\n|- building\l- Capital\l|+ TransportationDepartment()\l+ getBuilding()\l+ getCapital()\l+ setCapital()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTransportationDepartment.html",tooltip="Represents the Transportation Department in the government structure @inherits GovDepartment."];
+}

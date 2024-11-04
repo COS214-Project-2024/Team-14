@@ -1,0 +1,12 @@
+digraph "UtilityNetwork::displayInfo"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="UtilityNetwork::displayInfo",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Displays detailed information about the utility network."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="UtilityNetwork::getType",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classUtilityNetwork.html#aa1ac4bbba70a15ffbd52c9245c24d866",tooltip="Gets the type of infrastructure."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="UtilityNetwork::isValid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classUtilityNetwork.html#abe79f432b170aaae7c3c64bcf2bb95b3",tooltip="Checks if the utility network is valid."];
+}

@@ -1,0 +1,25 @@
+digraph "testObserverPattern"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="testObserverPattern",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CityStats::attach",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCityStats.html#a10269ca1e1a5ed4aec70fecf7675a0fa",tooltip="Registers a new observer."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CityStats::detach",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCityStats.html#a537b2adf5f37f973c170b9d6d069a64b",tooltip="Removes a registered observer."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="ConcreteCityStats::\lgetEconomicGrowth",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classConcreteCityStats.html#a3c8df68c036740f09f48d5a148bbfc86",tooltip="Gets the current economic growth rate."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="ConcreteCityStats::\lgetPopulation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classConcreteCityStats.html#ac7bd026f1778a0b997c206856fa20bb8",tooltip="Gets the current population."];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="CitizenPrototype::getCitizen\lCount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCitizenPrototype.html#a207b11bd309bc9cd51d62117f1eeabb4",tooltip=" "];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="ConcreteCityStats::\lgetSatisfaction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classConcreteCityStats.html#aeb8ee71e37c3c4703c44e8c2b74fcb5c",tooltip="Gets the current satisfaction level."];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="ConcreteCityStats::\lsetStats",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classConcreteCityStats.html#af4a6c81aeee47435a95d4023043ee1ec",tooltip="Sets and updates city statistics."];
+  Node8 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="CityStats::notify",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCityStats.html#a7c90a886d41a1501766794ab333217c8",tooltip="Notifies all observers of updates to city statistics."];
+}

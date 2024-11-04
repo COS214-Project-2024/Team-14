@@ -1,0 +1,10 @@
+digraph "Retired::Retired"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Retired::Retired",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Constructor for creating a retired citizen."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Retired::clone",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRetired.html#a1e09d4b7328bac82360069e4e3e42b72",tooltip="Creates a clone of the retired citizen."];
+}
